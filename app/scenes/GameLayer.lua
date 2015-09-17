@@ -1,4 +1,4 @@
-
+--111111
 local GameLayer = class("GameLayer", function()
     return display.newScene("GameLayer")
 end)
