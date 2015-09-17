@@ -68,8 +68,8 @@ function GameLayer:init()
   fourth:addChild(sprite)
   sprite.timer=0
 
-  --self._schedule = scheduler.scheduleGlobal(handler(self, self.iscollision),0.6)
-  --self._scheduleEnemy = scheduler.scheduleGlobal(handler(self, self.update),0.01)
+  self._schedule = scheduler.scheduleGlobal(handler(self, self.iscollision),0.6)
+  self._scheduleEnemy = scheduler.scheduleGlobal(handler(self, self.update),0.01)
 
 --添加小兵
    local soldier1=gameUi:getChildByTag(102)
